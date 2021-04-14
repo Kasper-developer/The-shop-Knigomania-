@@ -29,7 +29,8 @@ body {
   padding: 7px 29px;
 }
 .navbar__btn:hover {
-  background: rgba(255, 214, 8, 0.774);
+  background: rgba(243, 204, 9, 0.945);
+  transition: all 1s ease;
 }
 
 .logo {
@@ -87,7 +88,8 @@ body {
   font-size: 18px;
 }
 .hero__btn:hover {
-  background: rgba(255, 214, 8, 0.774);
+  background: rgba(241, 205, 1, 0.87);
+  transition: all 1s ease-in;
 }
 
 .hero-wrap {
@@ -200,7 +202,8 @@ body {
   margin-top: 5px;
 }
 .block__button:hover {
-  background: rgba(255, 214, 8, 0.774);
+  background: rgba(238, 199, 2, 0.774);
+  transition: all 0.8s linear;
 }
 .block-wrap {
   display: flex;
@@ -274,6 +277,10 @@ body {
   .hero-phone-wrap {
     display: none;
   }
+
+  .block__item:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 1226px) {
   .navbar {
@@ -310,8 +317,7 @@ body {
     justify-content: center;
   }
   .block__item {
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 0px;
     margin-bottom: 40px;
   }
   .block__item:last-child {
@@ -399,7 +405,7 @@ body {
   }
 
   .block__item.m-1 {
-    margin-right: 45px;
+    margin-right: 0;
   }
   .block__item.m-2 {
     margin-right: 0;
@@ -459,6 +465,9 @@ body {
     margin-right: 10px;
   }
   .block__item.m-2 {
+    margin-right: 45px;
+  }
+  .block__item.m-4 {
     margin-right: 45px;
   }
 
@@ -541,17 +550,20 @@ body {
     margin-top: -132px;
     font-size: 20px;
   }
+  .block__item.m-0 {
+    margin-right: 5px;
+  }
   .block__item.m-1 {
-    margin-right: 15px;
+    margin-right: 5px;
   }
   .block__item.m-2 {
-    margin-right: 15px;
+    margin-right: 5px;
   }
   .block__item.m-3 {
-    margin-right: 15px;
+    margin-right: 5px;
   }
   .block__item.m-4 {
-    margin-right: 15px;
+    margin-right: 5px;
   }
 
   .footer-logo {
@@ -568,6 +580,7 @@ body {
   .footer-copyright {
     text-align: center;
     width: 200px;
+    line-height: 20px;
   }
 
   .none {

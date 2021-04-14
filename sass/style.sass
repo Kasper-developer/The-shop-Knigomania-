@@ -24,7 +24,8 @@ body
 		border-radius: 100px
 		padding: 7px 29px
 		&:hover
-			background: rgba(255, 214, 8, 0.774)
+			background: rgba(243, 204, 9, 0.945)
+			transition: all 1s ease
 
 .logo
 	margin-right: -160px
@@ -73,7 +74,9 @@ body
 		padding: 15px 80px
 		font-size: 18px
 		&:hover
-			background: rgba(255, 214, 8, 0.774)	
+			background: rgba(241, 205, 1, 0.87)
+			transition: all 1s ease-in
+
 
 .hero-wrap
 	display: flex
@@ -165,7 +168,8 @@ body
 		padding: 10px 75px
 		margin-top: 5px
 		&:hover
-			background: rgba(255, 214, 8, 0.774)
+			background: rgba(238, 199, 2, 0.774)
+			transition: all 0.8s linear
 	&-wrap
 		display: flex
 		justify-content: center
@@ -223,7 +227,10 @@ body
 
 @media screen and ( max-width:4000px)
 	.hero-phone-wrap
-		display: none
+		display: none 
+	.block
+		&__item:last-child
+			margin-right: 0	
 @media screen and ( max-width:1226px)
 	.navbar
 		display: none
@@ -250,8 +257,7 @@ body
 				display: flex
 				justify-content: center
 		&__item
-			margin-left: 10px
-			margin-right: 20px
+			margin-right: 0px
 			margin-bottom: 40px
 			&:last-child
 				display: none
@@ -317,7 +323,7 @@ body
 	.block
 		&__item
 			&.m-1
-				margin-right: 45px
+				margin-right: 0
 			&.m-2
 				margin-right: 0
 	.stock-wrap, .sale-wrap, .new-wrap
@@ -363,6 +369,8 @@ body
 			margin-right: 10px
 			&.m-2
 				margin-right: 45px
+			&.m-4
+				margin-right: 45px	
 	.footer
 		&-logo
 			position: relative
@@ -425,14 +433,16 @@ body
 			margin-top: -132px
 			font-size: 20px	
 		&__item
+			&.m-0
+				margin-right: 5px
 			&.m-1
-				margin-right: 15px
+				margin-right: 5px
 			&.m-2
-				margin-right: 15px
+				margin-right: 5px
 			&.m-3
-				margin-right: 15px
+				margin-right: 5px
 			&.m-4
-				margin-right: 15px		
+				margin-right: 5px		
 	.footer
 		&-logo
 			width: 220px
@@ -444,7 +454,8 @@ body
 			order: 3		
 		&-copyright
 			text-align: center
-			width: 200px	
+			width: 200px
+			line-height: 20px
 	.none
 		display: none
 
