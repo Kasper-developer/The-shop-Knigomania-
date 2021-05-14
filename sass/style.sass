@@ -661,7 +661,6 @@ body
 	.container
 		padding: 0 47px
 	.navbar
-		position: relative
 		padding-top: 20px
 		padding-bottom: 30px
 		background: rgba(232, 167, 69, 0.31)
@@ -690,6 +689,17 @@ body
 			flex-basis: 50%
 			width: 100%
 			height: 100%
+			&.active .navbar-burger__item
+				opacity: 0
+				transition: all 0.5s
+			&.active .navbar-burger__body::before
+				transform: rotate(38deg)
+				transition: all 0.4s
+				margin-top: 8px
+			&.active .navbar-burger__body::after
+				transform: rotate(-38deg)
+				transition: all 0.4s
+				margin-bottom: 8px
 			&__wrapper
 				display: flex
 				align-items: center
@@ -700,13 +710,6 @@ body
 				min-height: 31px
 			&__body
 				margin-right: 8px
-			&__item
-				width: 26px
-				height: 1px
-				background: #000
-				margin-bottom: 6px
-				margin-top: 6px
-				margin-left: 7px
 				&::before
 					content: ''
 					position: absolute
@@ -725,6 +728,13 @@ body
 					left: 0
 					background: #000
 					margin-left: 7px
+			&__item
+				width: 26px
+				height: 1px
+				background: #000
+				margin-bottom: 6px
+				margin-top: 6px
+				margin-left: 7px
 			&__text
 				font-weight: normal
 				font-size: 13px
@@ -744,26 +754,39 @@ body
 			max-width: 29px
 			height: 27px
 			margin-right: 10px
+	body.lock
+		overflow: hidden
 	.menu
-		display: none
+		display: block
 		&__list
+			position: absolute
+			left: -100%
+			top: 79px
+			width: 155px
+			height: 255px
+			flex-direction: column
 			border: 1px solid none
-			padding: 9px 20px 2px 19px
-			background: #E09F3E
-			box-shadow: 0px 2px 10px rgba(0,0,0,0.0)
-			border-radius: 10px
+			padding: 36px 0px 34px 30px
+			background: #efbe75
+			border-radius: 2px
 			display: flex
-			justify-content: space-around
-			align-items: center
+			align-items: flex-start
+			transition: all 0.5s
+			z-index: 99
+			&.active
+				left: 0px
 		&__item
 			margin-right: 17px
+			margin-bottom: 25px
 			&:last-child
+				margin-bottom: 0
 				margin-right: 0
 		&__link
 			text-decoration: none
 			color: #000000
-			font-size: 12px
-			line-height: 14px
+			font-size: 14px
+			line-height: 17px
+			font-weight: 500
 			&:hover
 				color: #9E2A2B
 	.button
@@ -945,12 +968,6 @@ body
 			&:hover
 				background: rgba(243, 204, 9, 0.945)
 				transition: all 1s ease
-		&-burger
-			display: block
-			position: relative
-			flex-basis: 50%
-			width: 100%
-			height: 100%
 			&__wrapper
 				display: flex
 				align-items: center
@@ -1008,27 +1025,9 @@ body
 			height: 27px
 			margin-right: 10px
 	.menu
-		display: none
+		display: block
 		&__list
-			border: 1px solid none
-			padding: 9px 20px 2px 19px
-			background: #E09F3E
-			box-shadow: 0px 2px 10px rgba(0,0,0,0.0)
-			border-radius: 10px
-			display: flex
-			justify-content: space-around
-			align-items: center
-		&__item
-			margin-right: 17px
-			&:last-child
-				margin-right: 0
-		&__link
-			text-decoration: none
-			color: #000000
-			font-size: 12px
-			line-height: 14px
-			&:hover
-				color: #9E2A2B
+			top: 97px
 	.button
 		display: flex
 		align-items: center

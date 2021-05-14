@@ -1,3 +1,4 @@
+
 .navbar-catalog
 	padding-top: 60px
 	padding-bottom: 58px
@@ -173,6 +174,15 @@
 		.block
 			&__item:last-child
 				display: flex !important
+		&-title
+			background: #F1BE71
+			border-radius: 10px 0px
+			padding: 5px 50px 3px 75px
+			font-weight: 300
+			font-size: 12px
+			margin-bottom: 42px
+			width: 220px
+			margin-left: 0px
 		&__item
 			margin-right: 50px !important
 			max-width: 130.76px !important
@@ -296,6 +306,7 @@
 				padding: 0
 				margin-bottom: 90px
 				margin-right: 0
+
 @media screen and ( max-width: 947px)
 	.catalog
 		background: rgba(232, 167, 69, 0.31)
@@ -359,6 +370,10 @@
 				display: none !important
 			&.m-b
 				margin-top: -26px !important
+@media screen and ( max-width: 768px)
+	.catalog
+		&-menu__list
+			top: 119px
 @media screen and ( max-width: 766px)
 	.navbar-catalog
 		padding-top: 20px
@@ -387,6 +402,8 @@
 			&.m-b
 				margin-bottom: 61px !important
 				margin-top: 0px !important
+		&-menu__list
+			top: 79px
 		&__subtitle
 			max-width: 208px
 		&__text
@@ -632,6 +649,11 @@
 				padding: 0
 				margin-bottom: 90px
 				margin-right: 0
+@media screen and ( max-width: 480px )
+	.catalog
+		&-menu__list
+			top: 96px
+
 @media screen and ( max-width: 576px)
 	.catalog
 		&__item
