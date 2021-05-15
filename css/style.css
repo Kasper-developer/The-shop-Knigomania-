@@ -65,11 +65,14 @@ body {
   margin-right: -9px;
 }
 .logo__text {
+  display: inline-block;
+  margin-top: 5px;
   font-family: "HarlowSolid", sans-serif !important;
   font-style: italic;
   font-weight: normal;
   font-size: 36px;
   line-height: 45px;
+  color: black;
 }
 
 .menu__list {
@@ -231,7 +234,7 @@ body {
   background: rgba(238, 134, 67, 0.8);
   text-align: center;
   padding: 20px 71px 13px 69px;
-  margin-top: -167px;
+  margin-top: -170px;
   line-height: 31px;
 }
 .block__title_yellow {
@@ -400,6 +403,9 @@ body {
   font-size: 24px;
   line-height: 30px;
   margin-right: 127px;
+  color: black;
+  display: inline-block;
+  margin-top: 4px;
 }
 .footer__list {
   display: -webkit-box;
@@ -744,6 +750,7 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    color: black;
   }
   .logo__image {
     width: 29px;
@@ -1788,6 +1795,7 @@ body {
     margin-right: 0;
     margin-bottom: 14px;
     margin-left: 22px;
+    color: black;
   }
   .footer-logo__image {
     width: 29px;
@@ -1799,6 +1807,7 @@ body {
     font-size: 20px;
     line-height: 25px;
     margin-right: 62px;
+    color: black;
   }
   .footer-info {
     -webkit-box-ordinal-group: 4;

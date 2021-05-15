@@ -4,5 +4,5 @@ $(document).ready(function () {
 		$('.navbar-burger, .menu__list').toggleClass('active')
 		$('body').toggleClass('lock')
 	});
-  AOS.init()
+  AOS.init();
 })
