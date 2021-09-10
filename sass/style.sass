@@ -13,6 +13,7 @@
 body
 	font-family: Bahnschrift, sans-serif
 .container
+	position: relative
 	max-width: 1320px
 	padding: 0 10px
 	margin: auto
@@ -78,7 +79,7 @@ body
 		&:hover
 			color: #9E2A2B
 
-.button
+.butto
 	display: flex
 	align-items: center
 	margin-right: 9px
@@ -312,6 +313,91 @@ body
 	.block
 		&__item:last-child
 			margin-right: 0
+	.input
+		width: 300px
+		padding: 20px
+		border-radius: 9px
+		-webkit-box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5)
+		-moz-box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5)
+		box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5)
+
+	.button
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0,0 ,0 , 0.12)
+		background: rgba(255, 213, 0, 0.99)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #000
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 400
+		border-radius: 5px
+		&:hover
+			background: rgba(255, 213, 0, 0.99)
+	.modal
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 1050
+		display: none
+		width: 100%
+		height: 100%
+		overflow: hidden
+		background-color: rgba(0,0,0,.5)
+		&-close
+			position: absolute
+			top: 5px
+			right: 5px
+			width: 20px
+			cursor: pointer
+		&-dialog
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, 50%)
+			width: 400px
+			height: 380px
+			border-radius: 5px
+			padding: 40px
+			background: #fff
+			border-radius: 10px
+			z-index: 101
+		&-form
+			display: flex
+			flex-direction: column
+			align-items: center
+			&__name-label, &__email-label
+				font-size: 20px
+				line-height: 40px
+				font-weight: 400
+				text-transform: uppercase
+				margin-bottom: 5px
+			&__name
+				margin-bottom: 15px
+			&__email
+				margin-bottom: 30px
+			&__submit
+				width: 210px !important
+				height: 52px !important
+				padding: 17px 20px !important
+				font-size: 17px !important
+
+	.hide
+		display: none
+
+	.show
+		display: block
+
+	.fade
+		animation-name: fade
+		animation-duration: 0.7s
+
+	@keyframes fade
+		from
+			opacity: 0.1
+		to
+			opacity: 1
+
 @media screen and ( max-width:1296px)
 	.container
 		max-width: 1200px
